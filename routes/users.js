@@ -145,8 +145,8 @@ router.post("/signin", (req, res) => {
           });
         }
         else{
-          console.log(user)
-          res.status(422).json({ status:"422", msg: "User Not Verified" });
+          console.log("this user",user)
+          res.status(500).json({ status:"422", msg: "User Not Verified" });
         }
         
       } else {
